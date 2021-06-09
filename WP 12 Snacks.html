@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Justbites.css">
+<style>
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 40%;
+    width:0px;
+	right: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #D7090D;
+}	
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+	float:right 
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="WP 2 Our Story.html">OUR STORY</a>
+  <a href="WP 8 Menu.html">MENU</a>
+  <a href="WP 4 Offers.html">OFFERS</a>
+  <a href="WP 3 Gift Card.html">GIFT CARD</a>
+</div>
+<div id="main">
+ <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+<div style="position:absolute; top:30%; width:50%; height:70%;">
+</div>
+<a href="WP 1 Index.html"><div style="position:absolute; width:30%; height:30%; left:2%; top:3%;"><img src="logo.png" width="40%" height="50%"></div></a>
+<div style="position:fixed; left:93%; top:41%; width:5%; height:50%;"><img src="icon.png" height="20%"></div>
+<div style="position:absolute; width:10%; height:20%; left:62%; top:5%; color:#000000; font-size:100%; font-family:Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif;">Quick Order</div>
+<div style="position:absolute; width:10%; height:20%; left:62%; top:8%; color:#000000; font-size:100%; font-family:Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif;"><b>4455-6666</b></div>
+<div style="position:absolute; width:10%; height:20%; left:73%; top:5%; color:#000000; font-size:100%; font-family:Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif;">Quick Order</div>
+<a href="WP 7 Signin.html"><div style="position:absolute; width:10%; height:20%; left:73%; top:8%; color:#000000; font-size:100%; font-family:Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif;"><b><u>Sign IN</u>&nbsp;&nbsp;&nbsp;or</b></div></a>
+<a href="WP 6 Registration.html"><div style="position:absolute; width:10%; height:20%; left:81%; top:8%; color:#000000; font-size:100%; font-family:Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif;"><b><u>Register</u></b></div></a>
+<div style="position:absolute; width:50%; height:30%; font-family:Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif; font-size:540%; color:#434141; left:40%; top:15%;"><b>SNACKS</b></div>
+
+<div style="position:absolute; width:30%; height:100%; left:10%; top:40%"><img src="pc.png" width="200" height="168"></div>
+<div style="position:absolute; left:28%; top:52%; width:10%; height:10%; font-family:'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif; font-size:150%; color:#E81010;">Rs. 122</div>
+<div style="position:absolute; top:58%; left:25%; width:35%; height:25%;"><b><input type="submit" value="ADD TO CART"  name="s" style="width:27%; height:20%; border-radius:20%; color:#FFFFFF; background-color: #8F1618;"></b></div>
+<div style="position:absolute; width:30%; height:100%; left:10%; top:69%; font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif font-size:140%;"><b>CHICKEN POPCORN</b></div>
+<div style="position:absolute; width:30%; height:100%; left:10%; top:74%; font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif font-size:100%; color:#9C9B9B">Tasty pieces of Hot & Crispy chicken, that<br> you can pop non stop!</div>
+
+<div style="position:absolute; width:30%; height:100%; left:35%; top:37%"><img src="veg 1.png" width="320" height="179"></div>
+<div style="position:absolute; left:60%; top:52%; width:10%; height:10%; font-family:'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif; font-size:150%; color:#E81010;">Rs. 134</div>
+<div style="position:absolute; top:57%; left:58%; width:35%; height:25%;"><b><input type="submit" value="ADD TO CART"  name="s" style="width:27%; height:20%; border-radius:20%; color:#FFFFFF; background-color: #8F1618;"></b></div>
+<div style="position:absolute; width:30%; height:100%; left:42%; top:69%; font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif  font-size:140%;"><b>CRISPY VEG CUTLETS</b></div>
+<div style="position:absolute; width:30%; height:100%; left:42%; top:74%; font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif font-size:100%; color:#9C9B9B">Take a bite of crispy, yummy <br>veg cutlets and enjoy the goodness.</div>
+
+<div style="position:absolute; width:0%; height:100%; left:66%; top:19%"><img src="ch 1.png" width="330" height="340"></div>
+<div style="position:absolute; left:90%; top:52%; width:10%; height:10%; font-family:'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif; font-size:150%; color:#E81010;">Rs. 151</div>
+<div style="position:absolute; top:57%; left:89%; width:35%; height:25%;"><b><input type="submit" value="ADD TO CART"  name="s" style="width:27%; height:20%; border-radius:20%; color:#FFFFFF; background-color: #8F1618;"></b></div>
+<div style="position:absolute; width:30%; height:100%; left:70%; top:70%; font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif font-size:140%;"><b>3PC HOT N CRISPY</b></div>
+<div style="position:absolute; width:30%; height:100%; left:70%; top:73%; font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif font-size:100%; color:#9C9B9B">Treat your taste buds with crunchy, juicy <br>chicken that sets your taste buds alight.</div>
+
+<div style="position:absolute; width:30%; height:100%; left:08%; top:80%"><img src="veg 3.jpg" width="280" height="196"></div>
+<div style="position:absolute; left:28%; top:102%; width:10%; height:10%; font-family:'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif; font-size:150%; color:#E81010;">Rs. 115</div>
+<div style="position:absolute; top:107%; left:26%; width:35%; height:25%;"><b><input type="submit" value="ADD TO CART"  name="s" style="width:27%; height:20%; border-radius:20%; color:#FFFFFF; background-color: #8F1618;"></b></div>
+<div style="position:absolute; width:30%; height:100%; left:10%; top:112%; font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif font-size:150%;"><b>VEG STRIPS</b></div>
+<div style="position:absolute; width:30%; height:100%; left:10%; top:115%; font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif font-size:100%; color:#9C9B9B">5pcs of Golden, crispy mixed veg. fingers<br> for the veg lovers.</div>
+
+<div style="position:absolute; width:30%; height:100%; left:38%; top:82%"><img src="ch 4.jpg" width="255" height="171"></div>
+<div style="position:absolute; left:52%; top:102%; width:10%; height:10%; font-family:'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif; font-size:150%; color:#E81010;">Rs. 143</div>
+<div style="position:absolute; top:107%; left:51%; width:35%; height:25%;"><b><input type="submit" value="ADD TO CART"  name="s" style="width:27%; height:20%; border-radius:20%; color:#FFFFFF; background-color: #8F1618;"></b></div>
+<div style="position:absolute; width:30%; height:100%; left:40%; top:112%; font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif font-size:150%;"><b>CHICKEN ROLLS</b></div>
+<div style="position:absolute; width:30%; height:100%; left:40%; top:115%; font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif font-size:100%; color:#9C9B9B">Hot and crunchy chicken popcorn rolls to <br>fulfill your hunger.</div>
+
+<div style="position:absolute; width:10%; height:1%; left:65%; top:80%"><img src="veg 4.png" width="285" height="201"></div>
+<div style="position:absolute; left:82%; top:102%; width:10%; height:10%; font-family:'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif; font-size:150%; color:#E81010;">Rs. 165</div>
+<div style="position:absolute; top:107%; left:81%; width:35%; height:25%;"><b><input type="submit" value="ADD TO CART"  name="s" style="width:27%; height:20%; border-radius:20%; color:#FFFFFF; background-color: #8F1618;"></b></div>
+<div style="position:absolute; width:15%; height:1%; left:71%; top:111%; font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif font-size:150%;"><b>SPRING ROLLS</b></div>
+<div style="position:absolute; width:20%; height:1%; left:71%; top:114%; font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif font-size:100%; color:#9C9B9B">Delicious spring rolls filled with the goodness of fresh and healthy vegetables.</div>
+
+<div style="position:absolute; width:30%; height:1%; left:08%; top:123%"><img src="ch 2.jpg" width="263" height="195"></div>
+<div style="position:absolute; left:29%; top:145%; width:10%; height:10%; font-family:'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif; font-size:150%; color:#E81010;">Rs.121</div>
+<div style="position:absolute; top:150%; left:26%; width:35%; height:25%;"><b><input type="submit" value="ADD TO CART"  name="s" style="width:27%; height:20%; border-radius:20%; color:#FFFFFF; background-color: #8F1618;"></b></div>
+<div style="position:absolute; width:15%; height:1%; left:10%; top:155%; font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif font-size:150%;"><b>1PC HOT N CRISPY</b></div>
+<div style="position:absolute; width:30%; height:1%; left:10%; top:158%; font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif font-size:100%; color:#9C9B9B">Treat your buds to spicy, crunchy, juicy<br>chicken that sets your taste buds a light</div>
+
+<div style="position:absolute; width:30%; height:1%; left:38%; top:126%"><img src="veg 2.png" width="260" height="176"></div>
+<div style="position:absolute; left:57%; top:145%; width:10%; height:10%; font-family:'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif; font-size:150%; color:#E81010;">Rs. 125</div>
+<div style="position:absolute; top:150%; left:55%; width:35%; height:25%;"><b><input type="submit" value="ADD TO CART"  name="s" style="width:27%; height:20%; border-radius:20%; color:#FFFFFF; background-color: #8F1618;"></b></div>
+<div style="position:absolute; width:30%; height:1%; left:40%; top:155%; font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif font-size:150%;"><b>2PC VEG WRAP</b></div>
+<div style="position:absolute; width:30%; height:1%; left:40%; top:158%; font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif font-size:100%; color:#9C9B9B">Enjoy juicy, tasty panneer wraped with<br> yummy roti.</div>
+
+<div style="position:absolute; width:30%; height:1%; left:65%; top:122%"><img src="ch 3.png" width="285" height="201"></div>
+<div style="position:absolute; left:86%; top:145%; width:10%; height:10%; font-family:'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif; font-size:150%; color:#E81010;">Rs. 165</div>
+<div style="position:absolute; top:150%; left:85%; width:35%; height:25%;"><b><input type="submit" value="ADD TO CART"  name="s" style="width:27%; height:20%; border-radius:20%; color:#FFFFFF; background-color: #8F1618;"></b></div>
+<div style="position:absolute; width:30%; height:1%; left:69%; top:155%; font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif font-size:150%;"><b>CHICKEN STRIPS</b> (Boneless)</div>
+<div style="position:absolute; width:20%; height:1%; left:69%; top:158%; font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif font-size:100%; color:#9C9B9B">Tender, crispy and juicy boneless strips of chicken.A unique treat!</div>
+
+<div style="position:absolute; width:30%; height:1%; left:10%; top:167%"><img src="ch 7.png" width="255" height="171"></div>
+<div style="position:absolute; left:28%; top:188%; width:10%; height:1%; font-family:'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif; font-size:150%; color:#E81010;">Rs. 121</div>
+<div style="position:absolute; top:193%; left:26%; width:35%; height:25%;"><b><input type="submit" value="ADD TO CART"  name="s" style="width:27%; height:20%; border-radius:20%; color:#FFFFFF; background-color: #8F1618;"></b></div>
+<div style="position:absolute; width:30%; height:1%; left:10%; top:198%; font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif font-size:150%;"><b>GRILLED CHICKEN</b></div>
+<div style="position:absolute; width:30%; height:1%; left:10%; top:201%; font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif font-size:100%; color:#9C9B9B">Hot and juicy mouth watering grilled <br>chickens. Its a super snack! </div>
+
+<div style="position:absolute; width:30%; height:1%; left:38%; top:168%"><img src="CH 6.png" width="255" height="171"></div>
+<div style="position:absolute; left:57%; top:188%; width:10%; height:10%; font-family:'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif; font-size:150%; color:#E81010;">Rs. 132</div>
+<div style="position:absolute; top:193%; left:56%; width:35%; height:25%;"><b><input type="submit" value="ADD TO CART"  name="s" style="width:27%; height:20%; border-radius:20%; color:#FFFFFF; background-color: #8F1618;"></b></div>
+<div style="position:absolute; width:30%; height:1%; left:40%; top:198%; font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif font-size:150%;"><b>4PC HOT N CRISPY</b></div>
+<div style="position:absolute; width:30%; height:1%; left:40%; top:201%; font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif font-size:100%; color:#9C9B9B">Treat your taste buds to spicy, crunchy, juicy <br>chicken that sets your taste buds alight</div>
+
+<div style="position:absolute; width:15%; height:1%; left:69%; top:168%"><img src="veg 5.png" width="255" height="171"></div>
+<div style="position:absolute; left:83%; top:188%; width:10%; height:10%; font-family:'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif; font-size:150%; color:#E81010;">Rs. 143</div>
+<div style="position:absolute; top:193%; left:82%; width:35%; height:25%;"><b><input type="submit" value="ADD TO CART"  name="s" style="width:27%; height:20%; border-radius:20%; color:#FFFFFF; background-color: #8F1618;"></b></div>
+<div style="position:absolute; width:10%; height:1%; left:71%; top:196%; font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif font-size:150%;"><strong>VEG ROLLS</strong></div>
+<div style="position:absolute; width:20%; height:1%; left:71%; top:199%; font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif font-size:100%; color:#9C9B9B">Healthy and tasty vegetables rolled up in flour tortilla and toasted to seal the flavour.</div>
+
+
+<div style="position:absolute; width:100%; height:70%; top:210%; left:0%; background-color:#000000;"></div>
+<div style="position:absolute; width:9%; height:7%; top:215%; left:15%; color:#A8181A; font-family:Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif; font-size:18px;"><b>Order Online</b></div>
+<a href="WP 9 Chicken.html"><div style="position:absolute; width:5%; height:7%; top:219%; left:16%; color:#FFFFFF;">Chicken</div></a>
+<a href="WP 10 Burgers.html"><div style="position:absolute; width:5%; height:7%; top:223%; left:16%; color:#FFFFFF;">Burgers</div></a>
+<a href="WP 11 Rice Bowls.html"><div style="position:absolute; width:10%; height:7%; top:227%; left:16%; color:#FFFFFF;">Rice Bowlz</div></a>
+<a href="WP 12 Snacks.html"><div style="position:absolute; width:5%; height:7%; top:231%; left:16%; color:#FFFFFF;">Snacks</div></a>
+<a href="WP 13 Beverages.html"><div style="position:absolute; width:5%; height:7%; top:235%; left:16%; color:#FFFFFF;">Beverages</div></a>
+<a href="WP 14 Combos.html"><div style="position:absolute; width:10%; height:7%; top:239%; left:16%; color:#FFFFFF;">Combos</div></a>
+<div style="position:absolute; width:9%; height:7%; top:215%; left:31.5%; color:#A8181A; font-family:Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif; font-size:20px;"><b>Order In</b></div>
+<a href="WP 7 Signin.html"><div style="position:absolute; width:5%; height:7%; top:219%; left:32%; color:#FFFFFF;">Bangalore</div>
+<div style="position:absolute; width:5%; height:7%; top:223%; left:32%; color:#FFFFFF;">Chennai</div>
+<div style="position:absolute; width:5%; height:7%; top:227%; left:32%; color:#FFFFFF;">Delhi</div>
+<div style="position:absolute; width:5%; height:7%; top:231%; left:32%; color:#FFFFFF;">Hyderabad</div>
+<div style="position:absolute; width:5%; height:7%; top:235%; left:32%; color:#FFFFFF;">Kolkata</div>
+<div style="position:absolute; width:5%; height:7%; top:239%; left:32%; color:#FFFFFF;">Mumbai</div>
+<div style="position:absolute; width:5%; height:7%; top:243%; left:32%; color:#FFFFFF;">Pune</div>
+<div style="position:absolute; width:5%; height:7%; top:247%; left:32%; color:#FFFFFF;">Vishakapatnam</div></a>
+<div style="position:absolute; width:9%; height:7%; top:215%; left:44%; color:#A8181A; font-family:Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif; font-size:20px;"><b>My Menu</b></div>
+<a href="WP 7 Signin.html"><div style="position:absolute; width:5%; height:7%; top:219%; left:45%; color:#FFFFFF;">Sign In</div></a>
+<a href="WP 6 Registration.html"><div style="position:absolute; width:5%; height:7%; top:223%; left:45%; color:#FFFFFF;">Register</div></a>
+<div style="position:absolute; width:9%; height:7%; top:228%; left:45%; color:#A8181A; font-family:Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif; font-size:20px;"><b>Policy</b></div>
+<a href="WP 18 Disclaimer.html"><div style="position:absolute; width:5%; height:7%; top:232%; left:45%; color:#FFFFFF;">Disclaimer</div></a>
+<a href="WP 19 Terms Of Use.html"><div style="position:absolute; width:10%; height:7%; top:236%; left:45%; color:#FFFFFF;">Terms of Use</div></a>
+<div style="position:absolute; width:9%; height:7%; top:215%; left:54%; color:#A8181A; font-family:Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif; font-size:18px;"><b>Get In Touch</b></div>
+<a href="WP 15 Contact Us.html"><div style="position:absolute; width:10%; height:7%; top:219%; left:55%; color:#FFFFFF;">Contact us</div></a>
+<a href="WP 16 Feedback.html"><div style="position:absolute; width:5%; height:7%; top:223%; left:55%; color:#FFFFFF;">Feedback</div></a>
+<a href="WP 17 Careers.html"><div style="position:absolute; width:5%; height:7%; top:227%; left:55%; color:#FFFFFF;">Careers</div></a>
+<div style="position:absolute; width:20%; height:7%; top:264%; left:40%; color:#939393; font-size:13px;">&copy;Copyright 2016 IFC All Rights Reserved</div>
+<div style="position:absolute; width:70%; height:7%; top:266%; left:23%; color:#939393; font-family:Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif; font-size:13px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Food shown are for illustration purpose only.Actual product may differ from the images shown in this website.The JUST BITES<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name, logo and related marks are trademarks of JUST BITES.Inc.</div>
+<div style="position:absolute; width:9%; height:7%; top:215%; left:75%; color:#A8181A; font-family:Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif; font-size:20px;"><b>Follow Us</b></div>
+<div style="position:absolute; top:220%; left:72%; width:20%; height:20%;"><img src="2.png" width="17%" height="30%"></div>
+<div style="position:absolute; top:220%; left:76%; width:20%; height:20%;"><img src="5.png" width="15%" height="27%"></div>
+<div style="position:absolute; top:220%; left:80%; width:20%; height:20%;"><img src="6.png" width="15%" height="27%"></div>
+<div style="position:absolute; top:230%; left:73%; width:20%; height:20%; color:#EDEDED;">Download Just Bites App
+<div style="position:absolute; top:18%; left:0%; width:30%; height:50%;"><img src="button_google_play_big.png" width="170%" height="90%"></div>
+<div style="position:absolute; top:68%; left:0%; width:50%; height:70%;"><img src="apple.png" width="100%" height="50%"></div>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script> 
+
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+	<script type="text/javascript" src="engine1/script.js"></script>
+
+</body>
+</html>
+
